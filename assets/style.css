@@ -1,0 +1,115 @@
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  height: 1000px;  /* set at this height to scroll the page*/
+}
+
+header {
+
+height: 70px;
+width: 100%;
+background-color: black;
+display: inline-block;
+
+
+}
+
+
+
+h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 75px;
+  padding: 0 90px;
+  display: inline-block;
+}
+
+
+nav ul li {
+display: inline-block;
+ line-height: 75px;
+ margin: 0 5px;
+ 
+ 
+}
+
+nav ul li a{
+  color: red;
+  font-size: 16px;
+  float: right;
+  
+}
+
+nav{
+  float: right;
+  list-style-type: none;
+  height: 75px;
+  margin-right: 50px;
+}
+
+aside {
+  top: 270px; /* set this the same as the height of the header and sub*/
+  margin-bottom: 0;
+  width: 100px;
+  height: 1000px;
+  background-color: blue;
+  color: white;
+  margin-top: 200px;
+ 
+}
+
+.projects {
+  position: relative;
+  border: 5px solid red;
+  top:100px;
+}
+.Project-1 {
+  display: flex;
+  
+  top: 10px;
+
+  
+}
+.Project-1 h2{
+
+  color: red;
+  background-color: purple;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  border: 5px solid lightblue;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+
+}
+
+
+.subheading {
+  background-color: lightblue;
+  height: 200px;
+  position: relative;
+  margin-top: -5px;
+  }
+
+  /*Made subheading relative to position subtitle in bottomn corner*/
+
+  .sub {
+    color: red;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    
+  } 
+
+  /*Made subtitle absolute to position subtitle in bottomn corner*/
+
+  
+
