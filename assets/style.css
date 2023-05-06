@@ -55,14 +55,14 @@ nav{
 }
 
 aside {
-  top: 270px; /* set this the same as the height of the header and sub*/
+  /* top: 100px;  set this the same as the height of the header and sub*/
   margin-bottom: 0;
   width: 100px;
   height: 1000px;
   background-color: blue;
   color: white;
   margin-top: 200px;
- 
+  position: relative;
 }
 
 .projects {
@@ -82,12 +82,13 @@ aside {
   color: red;
   background-color: purple;
   height: 500px;
-  width: 100%;
+  width: 500px;
   display: flex;
   border: 5px solid lightblue;
   background-size: cover;
-  position: absolute;
-  top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
