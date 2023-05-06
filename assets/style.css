@@ -18,6 +18,7 @@ background-color: black;
 display: inline-block;
 
 
+
 }
 
 
@@ -54,45 +55,6 @@ nav{
   margin-right: 50px;
 }
 
-aside {
-  /* top: 100px;  set this the same as the height of the header and sub*/
-  margin-bottom: 0;
-  width: 100px;
-  height: 1000px;
-  background-color: blue;
-  color: white;
-  margin-top: 200px;
-  position: relative;
-}
-
-.projects {
-  position: relative;
-  border: 5px solid red;
-  top:100px;
-}
-.Project-1 {
-  display: flex;
-  
-  top: 10px;
-
-  
-}
-.Project-1 h2{
-
-  color: red;
-  background-color: purple;
-  height: 500px;
-  width: 500px;
-  display: flex;
-  border: 5px solid lightblue;
-  background-size: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-
 .subheading {
   background-color: lightblue;
   height: 200px;
@@ -100,6 +62,7 @@ aside {
   margin-top: -5px;
   }
 
+ 
   /*Made subheading relative to position subtitle in bottomn corner*/
 
   .sub {
@@ -111,6 +74,104 @@ aside {
   } 
 
   /*Made subtitle absolute to position subtitle in bottomn corner*/
+
+
+aside {
+  /* top: 100px;  set this the same as the height of the header and sub*/
+  width: 100px;
+  height: 1000px;
+  background-color: blue;
+  color: white;
+  margin-top: -100px;
+  display: inline-block; 
+  top: 100px;
+ 
+  /*position: relative;*/
+}
+
+.projects {
+  position: relative;
+  border: 5px solid red;
+  top:200px;
+  height: 1000px;
+  width:1500px;
+  display: inline-block;
+  
+  /*display: flex;  when add this to main content it goes under the sidebar*/
+}
+.Project-1 {
+  display: flex;
+  margin-top: 100px;
+
+  
+}
+.Project-1 h2{
+
+  color: red;
+  background-color: purple;
+  height: 500px;
+  width: 50%;
+  display: flex;
+  border: 5px solid lightblue;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.Project-2, .Project-3, .Project-4, .Project-5 {
+  color: red;
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  border: 5px solid lightblue;
+  text-align: center;
+  
+ 
+}
+
+.other-projects{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+} 
+
+/*
+.Project-3 {
+  color: red;
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  border: 5px solid lightblue;
+}
+
+.Project-4 {
+  color: red;
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  border: 5px solid lightblue;
+}
+
+.Project-5 {
+  color: red;
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  border: 5px solid lightblue;
+}
+
+ */
+ 
 
   
 
