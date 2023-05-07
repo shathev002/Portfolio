@@ -120,13 +120,20 @@ height: 100px; /*
   position: relative;
   top: 1000px;*/
 
+  .work {
+  display: flex;
+  flex-wrap: wrap;
+  
+ 
+  }
 
-aside ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
-  border-right: 5px solid darkblue;
-  line-height: 50px;;
-  font-size: 50px;
-  padding-right: 30px;
-}
+  .work h3 {
+    color: blue;
+    border-right: 5px solid darkblue;
+    line-height: 50px;
+    font-size: 50px;
+    width: 200px;
+  }
 
 .projects {
   
@@ -225,10 +232,30 @@ aside ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
 
 
 .footer {
-  display: flex; 
+ 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
-  justify-content: space-around;
+  align-content: space-between;
   
+}
+
+.footer h3 {
+  display: inline;
+  color: blue;
+  border-right: 5px solid darkblue;
+  line-height: 50px;
+  font-size: 50px;
+  width: 200px;
+}
+
+.footer h4 {
+display: inline;
+flex-basis: 300px;
+color: red;
+margin-left: 300px;
+text-align: center;
 }
 
 
