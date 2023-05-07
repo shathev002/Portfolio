@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 1000px;  /* set at this height to scroll the page*/
+/*  height: 1000px; */ /* set at this height to scroll the page*/
 }
 
 header {
@@ -89,24 +89,29 @@ nav{
   display: flex;
   
 }
-aside {
+.sidebar ul{
   /* top: 100px;  set this the same as the height of the header and sub*/
   width: 200px;
-  background-color: blue;
-  color: white;
+  /*background-color: blue;
+  color: white;*/
   height: 2000px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  border-left: 5 px solid darkblue;
+  text-align: center;
+  color: black;
   /*display: inline-block;
  margin-top: -200px;
   position: relative;
   top: 1000px;*/
 }
 
-aside h3{
-  text-align: center;
+aside ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
+  border-right: 5px solid darkblue;
+  line-height: 50px;;
+  font-size: 50px;
+  padding-right: 30px;
 }
 
 .projects {
