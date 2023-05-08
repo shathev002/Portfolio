@@ -25,27 +25,30 @@ h1 {
   font-weight: bold;
   line-height: 75px;
   padding: 0 90px;
-  position: absolute;
+  justify-content:  start;
+  flex: 20%;
+  /*position: absolute;*/
   left: 0;
+ 
+}
 
+.nav-bar ul li {
+  flex: 80%;
   
-}
-
-
-nav ul li {
-display: inline-block;
- line-height: 75px;
- margin: 0 5px;
- 
- 
-}
+ }
 
 nav ul li a{
   color: red;
   font-size: 16px;
   float: right;
+  flex: wrap;
+}
 
-  
+  nav ul li {
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 5px;
+     
 }
 
 nav{
