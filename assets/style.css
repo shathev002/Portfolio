@@ -64,7 +64,7 @@ nav{
 }
 
 .subheading {
-  background-color: lightblue;
+  background-color: pink;
   height: 200px;
   position: relative;
   margin-top: -5px;
@@ -80,7 +80,8 @@ nav{
     bottom: 20px;
     font-weight: bold;
     font-size: 55px;
-    
+    border: 5px solid darkblue;
+    background-color: lightblue;
   } 
 
   /*Made subtitle absolute to position subtitle in bottomn corner*/
@@ -108,7 +109,7 @@ nav{
   color: blue;
   border-right: 5px solid darkblue;
   line-height: 50px;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   flex: 20%;
   margin-right: -1.5%;
@@ -119,7 +120,7 @@ nav{
   color: black;
   letter-spacing: 2px;
   line-height: 50px;
-  
+ 
   
 }
 .about-me-content {
@@ -188,6 +189,7 @@ nav{
   max-width: 100%;
   height:100%;
   width: 100%;
+  border: 5px solid lightblue;
   position: relative;
   transition:  transform 0.15s;
 }
@@ -230,6 +232,7 @@ nav{
 color: red;
 text-align: center;
 align-self: center;
+font-size: 20px;
 
 }
 
@@ -237,5 +240,54 @@ align-self: center;
   flex: 80%;
  
 }
+
+
+@media only screen and (max-width: 725px) {
+  .footer h3 {
+    font-size: 30px;
+  }
+  .footer h4 {
+    font-size: 15px;
+    }
+
+.about-me-content {
+  display: flex;
+  flex: 90%;
+}
+
+  
+  
+   .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: space-evenly;
+    width: 90%;
+     
+   } 
+
+   .footer > * {
+    flex: 90%;
+   
+  }
+
+
+   }
+
+   @media only screen (min-width: 725px) and (max-width: 600px) {
+    .projects-section {
+       width: 40%;
+       
+     } 
+
+   }
+
+
+
+
+
+  
+ 
+   
 
 
