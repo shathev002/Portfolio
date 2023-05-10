@@ -6,6 +6,8 @@ Created a webpage from scatch using HTML and CSS topics we covered in the bootca
 
 Created a portfolio page to display skills learned regarding HTML structure and CSS properties. 
 
+Used media queries technique to make the website responsive to different devices. 
+
 Can use this portfolio to demonstrate to companies skills acquired during the bootcamp and 
 
 showcase projects completed. 
@@ -16,7 +18,7 @@ N/A
 
 ## Usage
 
-To view the HTML code adjusted you can refer to the html file and to view the CSS properties 
+To view the HTML code you can refer to the html file and to view the CSS properties 
 you can refer to the css file under the assets folder. 
 
 To view the actual webpage please refer to the following url link.
