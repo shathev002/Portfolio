@@ -6,8 +6,10 @@
   
 
 }
+/*Set font type for all paragraphs and headers and set a backup font
+Link to fonts in html file.*/
 
-p {
+p h1 h2 h3 h4 {
   font-family: Roboto, Arial;
 }
 
@@ -63,6 +65,8 @@ nav{
   
 }
 
+
+/*Made subheading relative to position subtitle in bottomn corner of header*/
 .subheading {
   background-color: pink;
   height: 200px;
@@ -71,8 +75,8 @@ nav{
   }
 
  
-  /*Made subheading relative to position subtitle in bottomn corner*/
-
+  
+  /*Made subtitle absolute to position subtitle in bottomn corner of header*/
   .sub {
     color: red;
     position: absolute;
@@ -84,16 +88,16 @@ nav{
     background-color: lightblue;
   } 
 
-  /*Made subtitle absolute to position subtitle in bottomn corner*/
 
+/* Split main content into 3 sections and made them a flexbox*/
 
+/*About me section*/ 
 
 .about {
   display: flex;
   margin-top: 2%;
   padding-top: 2%;
- 
-  
+   
 }
 
 .about-me-content {
@@ -131,7 +135,7 @@ nav{
   
 }
 
-
+/*Made some adjustments to avatar to fit inside about me section*/
 #self {
   width: 50%;
   height: 50%;
@@ -140,7 +144,16 @@ nav{
  
 }
 
+/*Work section*/ 
 
+.subtitle {
+  width: 20%;
+  text-align: right;
+  color: blue;
+  text-align: center;
+  border-right: 5px solid darkblue;
+  font-size: 50px;
+}
 
 .projects-section h2{
   color: red;
@@ -149,7 +162,7 @@ nav{
   background-color: lightblue;
   z-index: 1; 
   
-  /* when position it goes off to the side*/
+ 
 }
 
 .worksection {
@@ -182,6 +195,9 @@ nav{
 
  }
 
+/* Used hover transform to make image larger when hover over it*/
+
+
 
 .project-image {
  
@@ -194,29 +210,15 @@ nav{
   transition:  transform 0.15s;
 }
 
+
+
+
 .project-image:hover {
   transform: scale(1.1);
 }
 
 
-.subtitle {
-  width: 20%;
-  text-align: right;
-  color: blue;
-  text-align: center;
-  border-right: 5px solid darkblue;
-  font-size: 50px;
-}
-
-
-.footer {
- 
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  
-}
-
+/*Contact Me section*/ 
 
 .footer h3 {
   
@@ -236,13 +238,49 @@ font-size: 20px;
 
 }
 
+.footer {
+ 
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  
+}
+
+
 .footer > * {
   flex: 80%;
  
 }
 
+/*Media queries*/
+
+
+@media only screen and (max-width: 850px) {
+
+  .project-image {
+ 
+    max-height: 70%;
+    
+  }
+
+  .footer h3 {
+    font-size: 30px;
+  }
+
+}
+
 
 @media only screen and (max-width: 725px) {
+
+  h1 {
+      
+    font-size: 45px;
+    padding: 0 50px;
+    
+   
+  }
+
+
   .footer h3 {
     font-size: 30px;
   }
@@ -251,17 +289,17 @@ font-size: 20px;
     }
 
 .about-me-content {
-  display: flex;
+  
   flex: 90%;
 }
 
+.project-image {
+ 
+  max-height: 80%;
   
+}
   
    .projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    justify-content: space-evenly;
     width: 90%;
      
    } 
@@ -274,13 +312,111 @@ font-size: 20px;
 
    }
 
-   @media only screen (min-width: 725px) and (max-width: 600px) {
-    .projects-section {
-       width: 40%;
+   @media only screen and (max-width: 641px) {
+    h1 {
+      
+      font-size: 40px;
+      padding: 0 40px;
+      
+     
+    }
+
+    nav ul li a {
+      font-size: 14px;
+    }
+
+    .about h3 {
+  
+      font-size: 40px;
+      flex: 10%;
+     
+    
+    } 
+
+    .subtitle {
+      width: 19%;
+      font-size: 40px;
+    }
+
+    .footer h3 {
+  
+      
+      line-height: 50px;
+      font-size: 32px;
+      flex: 15%;
+
+    }
+  
+  
+  .project-image {
+   
+    max-height: 75%;
+    
+  }
+    
+     .projects-section {
+      width: 90%;
        
      } 
 
+    
    }
+
+   @media only screen and (max-width: 600px) {
+
+
+    h1 {
+      
+      font-size: 30px;
+      padding: 0 30px;
+      
+     
+    }
+    .about h3 {
+  
+      font-size: 40px;
+      flex: 20%;
+      margin-right: -1.5%;
+    
+    } 
+
+    .subtitle {
+      width: 19%;
+      font-size: 40px;
+    }
+
+    .footer h3 {
+  
+      
+      line-height: 50px;
+      font-size: 32px;
+      flex: 15%;
+
+    }
+
+    .projects-section {
+       flex: 60%;
+      } 
+      nav ul li a {
+        font-size: 14px;
+      }
+
+      .footer > * {
+        flex: 90%;
+       
+      }
+    
+      .project-image {
+ 
+        max-height: 70%;
+        
+      }
+
+      
+   }
+
+
+
 
 
 
