@@ -25,7 +25,7 @@ To view the actual webpage please refer to the following url link.
 
 https://shathev002.github.io/Portfolio/
 
-To compare to the original webpage you can refer to the following image. 
+You can also refer to the screenshot below. 
 
 ![alt text](./assets/web%20page%20screenshot.png)
 
